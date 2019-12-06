@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="8.0" y="378.0">hu.bmrk.alkfejlbead.entity.Beer</node>
+    <node x="248.0" y="0.0">hu.bmrk.alkfejlbead.entity.Role</node>
+    <node x="0.0" y="189.0">hu.bmrk.alkfejlbead.entity.Storage</node>
+    <node x="8.0" y="0.0">hu.bmrk.alkfejlbead.entity.Wine</node>
+    <node x="219.0" y="123.0">hu.bmrk.alkfejlbead.entity.User</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="hu.bmrk.alkfejlbead.entity.User" target="hu.bmrk.alkfejlbead.entity.Role">
+      <point x="47.5" y="-69.5" />
+      <point x="361.5" y="98.0" />
+      <point x="347.0" y="98.0" />
+      <point x="33.0" y="36.5" />
+    </edge>
+    <edge source="hu.bmrk.alkfejlbead.entity.Beer" target="hu.bmrk.alkfejlbead.entity.Storage">
+      <point x="-59.25" y="-69.5" />
+      <point x="27.75" y="353.0" />
+      <point x="21.75" y="353.0" />
+      <point x="-65.25" y="69.5" />
+    </edge>
+    <edge source="hu.bmrk.alkfejlbead.entity.Storage" target="hu.bmrk.alkfejlbead.entity.Wine">
+      <point x="-21.75" y="-69.5" />
+      <point x="65.25" y="164.0" />
+      <point x="67.25" y="164.0" />
+      <point x="-19.75" y="69.5" />
+    </edge>
+    <edge source="hu.bmrk.alkfejlbead.entity.Wine" target="hu.bmrk.alkfejlbead.entity.Storage">
+      <point x="59.25" y="69.5" />
+      <point x="146.25" y="164.0" />
+      <point x="152.25" y="164.0" />
+      <point x="65.25" y="-69.5" />
+    </edge>
+    <edge source="hu.bmrk.alkfejlbead.entity.Storage" target="hu.bmrk.alkfejlbead.entity.Beer">
+      <point x="21.75" y="69.5" />
+      <point x="108.75" y="353.0" />
+      <point x="106.75" y="353.0" />
+      <point x="19.75" y="-69.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="0.0" />
+  <SelectedNodes>
+    <node>hu.bmrk.alkfejlbead.entity.Beer</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

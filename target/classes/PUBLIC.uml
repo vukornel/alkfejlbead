@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>77f5a74e-fe1f-48cf-b57e-88f2f8181548.SCHEMA:TEST.PUBLIC</OriginalElement>
+  <nodes>
+    <node x="212.0" y="146.0">77f5a74e-fe1f-48cf-b57e-88f2f8181548.TABLE:TEST.PUBLIC.BEER</node>
+    <node x="98.25" y="0.0">77f5a74e-fe1f-48cf-b57e-88f2f8181548.TABLE:TEST.PUBLIC.STORAGE</node>
+    <node x="0.0" y="353.0">77f5a74e-fe1f-48cf-b57e-88f2f8181548.TABLE:TEST.PUBLIC.ROLE</node>
+    <node x="196.0" y="331.0">77f5a74e-fe1f-48cf-b57e-88f2f8181548.TABLE:TEST.PUBLIC.USERS</node>
+    <node x="0.0" y="146.0">77f5a74e-fe1f-48cf-b57e-88f2f8181548.TABLE:TEST.PUBLIC.WINE</node>
+    <node x="123.0" y="499.0">77f5a74e-fe1f-48cf-b57e-88f2f8181548.TABLE:TEST.PUBLIC.USERS_ROLES</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="77f5a74e-fe1f-48cf-b57e-88f2f8181548.TABLE:TEST.PUBLIC.WINE" target="77f5a74e-fe1f-48cf-b57e-88f2f8181548.TABLE:TEST.PUBLIC.STORAGE">
+      <point x="0.0" y="-70.0" />
+      <point x="96.0" y="121.0" />
+      <point x="150.0" y="121.0" />
+      <point x="-51.75" y="48.0" />
+    </edge>
+    <edge source="77f5a74e-fe1f-48cf-b57e-88f2f8181548.TABLE:TEST.PUBLIC.BEER" target="77f5a74e-fe1f-48cf-b57e-88f2f8181548.TABLE:TEST.PUBLIC.STORAGE">
+      <point x="0.0" y="-70.0" />
+      <point x="307.5" y="121.0" />
+      <point x="253.5" y="121.0" />
+      <point x="51.75" y="48.0" />
+    </edge>
+    <edge source="77f5a74e-fe1f-48cf-b57e-88f2f8181548.TABLE:TEST.PUBLIC.USERS_ROLES" target="77f5a74e-fe1f-48cf-b57e-88f2f8181548.TABLE:TEST.PUBLIC.USERS">
+      <point x="36.75" y="-36.5" />
+      <point x="233.25" y="474.0" />
+      <point x="305.0" y="474.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+    <edge source="77f5a74e-fe1f-48cf-b57e-88f2f8181548.TABLE:TEST.PUBLIC.USERS_ROLES" target="77f5a74e-fe1f-48cf-b57e-88f2f8181548.TABLE:TEST.PUBLIC.ROLE">
+      <point x="-36.75" y="-36.5" />
+      <point x="159.75" y="474.0" />
+      <point x="88.0" y="474.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8733108108108109" x="207.0" y="239.0" />
+  <SelectedNodes>
+    <node>77f5a74e-fe1f-48cf-b57e-88f2f8181548.TABLE:TEST.PUBLIC.WINE</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+  </Categories>
+</Diagram>
+
