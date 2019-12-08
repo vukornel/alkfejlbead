@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/users")
 public class UserController {
@@ -37,10 +37,16 @@ public class UserController {
         return ResponseEntity.ok(userRepository.save(user));
     }
 
-    @PostMapping("login")
-    public ResponseEntity login() {
+    @PostMapping("/login")
+    public ResponseEntity<User> login() {
       return ResponseEntity.ok(authenticatedUser.getUser());
     } 
+
+    @RequestMapping("/login")
+    public boolean login(@RequestBody User user) {
+        return
+          user.getUserName().equals("user") && user.getPassword().equals("password");
+    }
 
     @GetMapping("/users")
     public List<User> getUsers() {

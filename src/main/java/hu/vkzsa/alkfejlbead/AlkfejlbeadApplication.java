@@ -7,8 +7,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import hu.vkzsa.alkfejlbead.entity.User;
 import hu.vkzsa.alkfejlbead.repository.UserRepository;
@@ -31,12 +29,12 @@ public class AlkfejlbeadApplication {
         };
     }
 
-    public WebMvcConfigurer corsConfigurer() {
+  /*  public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
           @Override
           public void addCorsMappings(CorsRegistry registry) {
             registry.addMapping("/users").allowedOrigins("http://localhost:4200");
           }
         };
-      }
+      }*/
 }

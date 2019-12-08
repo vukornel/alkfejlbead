@@ -36,7 +36,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.authenticationProvider(authenticationProvider());
+        auth
+          .inMemoryAuthentication()
+          .withUser("user")
+          .password("password")
+          .roles("USER");
     }
 
     @Override
@@ -49,8 +53,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.headers().frameOptions().disable();*/
 
         http
-        .cors()
-            .and()
         .csrf().disable()
         .authorizeRequests()
             .antMatchers("/h2/**", "/users/register").permitAll()   // important!
